@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>样品信息管理系统</title>
+    <link rel="stylesheet" href="${ctxPath}/plugins/layui/css/layui.css">
+    <script src="${ctxPath}/plugins/layui/layui.js"></script>
+  
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style rel="stylesheet" type="text/css">
+        .layui-tab-title li:first-child > i {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="layui-layout-body">
+<div style="margin-top: 15%;margin-left: 40%">
+<fieldset class="layui-elem-field" style="width: 400px;height: 200px">
+  <legend>用户登录</legend>
+  <div class="layui-field-box">
+  <form class="layui-form" action="${ctxPath}/login.do" method="post">
+  <div class="layui-form-item">
+    <label class="layui-form-label">用户名</label>
+    <div class="layui-input-block">
+      <input type="text" name="code" lay-verify="title" autocomplete="off" 
+      	placeholder="请输入用户名" class="layui-input" >
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">密码</label>
+    <div class="layui-input-block">
+      <input type="password" name="password" lay-verify="required"  name="" placeholder="请输入密码" autocomplete="off"
+       class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit="" lay-filter="demo1">立即登录</button>
+    </div>
+  </div>
+  </form>
+</div>
+</fieldset>
+</div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+    <legend>样品基本信息</legend>
+</fieldset>
+<div id="main" style="width:100%;">
+    <div id="left" style="width:20%;float:left;">
+        <img class ="sample-info-img"src = "${sampleinfo.sltwz}">
+        <style>
+
+            .laytable-cell-1-sltwz{
+                height: 100%;
+                max-width: 200%;
+            }
+            .sample-info-img {
+                width: 200px;
+                height: 200px;
+                border-radius: 4px;
+            }
+
+        </style>
+    </div>
+    <div id="mid" style="width:40%;float:left;" class="layui-row">
+        <div class="layui-col-md-offset3">
+            <form class="layui-form layui-form-pane" id="XSForm">
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">样品ID</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="id" name="id"    value="${sampleinfo.sampleid}"  class="layui-input" readonly>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">送样时间</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="sysj" name="sysj"  value="${sampleinfo.sysj}"   class="layui-input" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">扫描时间</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="smsj" name="smsj" value="${sampleinfo.smsj}"  class="layui-input" readonly>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">样品编号</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="ypbh" name="ypbh"  value="${sampleinfo.ypbh}" class="layui-input" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">样品属性</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="ypsx" name="ypsx"  value="${sampleinfo.ypsx}" class="layui-input" readonly>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">样品尺寸</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="ypcc" name="ypcc"  value="${sampleinfo.ypcc}" class="layui-input" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">样品分辨率</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="ypfbl" name="ypfbl"  value="${sampleinfo.ypfbl}"  class="layui-input" readonly>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">送样人</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="syr" name="syr" value="${sampleinfo.syr}" class="layui-input" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">导师</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="ds" name="ds"   value="${sampleinfo.ds}"  class="layui-input" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label" style="width:150px;margin-left: 50px">CT存储位置</label>
+                    <div class="layui-input-inline">
+                        <input type="text" id="ct" name="ct"  value="暂留"   class="layui-input" readonly>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="right" style="width:40%;float:right;" class="layui-row">
+        <div class="layui-col-md-offset3">
+            <form class="layui-form layui-form-pane" id="XSForm">
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">学校/单位</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="xx" name="xx"    value="${sampleinfo.xxdw}"  class="layui-input" readonly>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">专业</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="zy" name="zy"  value="${sampleinfo.zy}"   class="layui-input" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">取样时间</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="qysj" name="qysj" value="${sampleinfo.qysj}"  class="layui-input" readonly>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">取样人</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="qyr" name="qyr"  value="${sampleinfo.qyr}" class="layui-input" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">取样方式</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="qyfs" name="qyfs"  value="${sampleinfo.qyfs}" class="layui-input" readonly>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">拼接</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="pj" name="pj"  value="${sampleinfo.pj}" class="layui-input" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">样品</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="yp" name="yp"  value="${sampleinfo.yp}"  class="layui-input" readonly>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">二次放大</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="ecfd" name="ecfd" value="${sampleinfo.ecfd}" class="layui-input" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width:150px;margin-left: 50px">样品类型</label>
+                        <div class="layui-input-inline">
+                            <input type="text" id="yplx" name="yplx"   value="${sampleinfo.yplx}"  class="layui-input" readonly>
+                        </div>
+                    </div>
+                </div>
+                <!--<div>-->
+                    <!--<script  id="detailShoww">-->
+                        <!--<a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detaill" function = "sampleinfo.download">点击下载</a>-->
+                    <!--</script>-->
+                <!--</div>-->
+            </form>
+        </div>
+    </div>
+
+
+</div>

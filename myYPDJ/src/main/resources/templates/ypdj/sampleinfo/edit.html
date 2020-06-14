@@ -1,0 +1,210 @@
+<!--# layout("/common/layout.html",{"jsBase":"/js/ypdj/sampleinfo/"}){ -->
+
+<form class="layui-form layui-form-pane" id="updateForm">
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">样品ID</label>
+				<div class="layui-input-inline" style="background-color: #B2B2B2">
+					<input type="text" id="sampleid" name="sampleid"  value="${sampleinfo.sampleid}"   class="layui-input" readonly>
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">送样时间</label>
+				<div class="layui-input-inline">
+					<input type="text" id="sysj" name="sysj"  value="${sampleinfo.sysj}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">扫描时间</label>
+				<div class="layui-input-inline">
+					<input type="text" id="smsj" name="smsj"  value="${sampleinfo.smsj}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">样品编号</label>
+				<div class="layui-input-inline">
+					<input type="text" id="ypbh" name="ypbh"  value="${sampleinfo.ypbh}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">样品属性</label>
+				<div class="layui-input-inline">
+					<input type="text" id="ypsx" name="ypsx"  value="${sampleinfo.ypsx}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">样品尺寸</label>
+				<div class="layui-input-inline">
+					<input type="text" id="ypcc" name="ypcc"  value="${sampleinfo.ypcc}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">样品分辨率</label>
+				<div class="layui-input-inline">
+					<input type="text" id="ypfbl" name="ypfbl"  value="${sampleinfo.ypfbl}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">送样人</label>
+				<div class="layui-input-inline">
+					<input type="text" id="syr" name="syr"  value="${sampleinfo.syr}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">导师</label>
+				<div class="layui-input-inline">
+					<input type="text" id="ds" name="ds"  value="${sampleinfo.ds}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">学校/单位</label>
+				<div class="layui-input-inline">
+					<input type="text" id="xxdw" name="xxdw"  value="${sampleinfo.xxdw}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">专业</label>
+				<div class="layui-input-inline">
+					<input type="text" id="zy" name="zy"  value="${sampleinfo.zy}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">取样时间</label>
+				<div class="layui-input-inline">
+					<input type="text" id="qysj" name="qysj"  value="${sampleinfo.qysj}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">取样人</label>
+				<div class="layui-input-inline">
+					<input type="text" id="qyr" name="qyr"  value="${sampleinfo.qyr}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">取样方式</label>
+				<div class="layui-input-inline">
+					<input type="text" id="qyfs" name="qyfs"  value="${sampleinfo.qyfs}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">定位</label>
+				<div class="layui-input-inline">
+					<input type="text" id="dw" name="dw"  value="${sampleinfo.dw}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">拼接</label>
+				<div class="layui-input-inline">
+					<input type="text" id="pj" name="pj"  value="${sampleinfo.pj}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">样品</label>
+				<div class="layui-input-inline">
+					<input type="text" id="yp" name="yp"  value="${sampleinfo.yp}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">二次放大</label>
+				<div class="layui-input-inline">
+					<input type="text" id="ecfd" name="ecfd"  value="${sampleinfo.ecfd}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">样品类型</label>
+				<div class="layui-input-inline">
+					<input type="text" id="yplx" name="yplx"  value="${sampleinfo.yplx}"   class="layui-input" >
+				</div>
+            </div>
+            <div class="layui-inline">
+            <label class="layui-form-label">缩略图位置</label>
+				<div class="layui-input-inline">
+					<input type="text" id="sltwz" name="sltwz"  value="${sampleinfo.sltwz}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+            <label class="layui-form-label">CT存储位置</label>
+				<div class="layui-input-inline">
+					<input type="text" id="ctwz" name="ctwz"  value="${sampleinfo.ctwz}"   class="layui-input" >
+				</div>
+            </div>
+        </div>
+    </div>
+	<!-- 业务对象须有hidden字段，保存delFlag和version字段-->
+	<input type="hidden" name="delFlag" value=${sampleinfo.delFlag} />
+    <input type="hidden" name="id" value=${sampleinfo.id} />
+    <layui:submitButtons id="updateButton" />
+</form>
+<blockquote>
+    备注：</br>
+    （1）样品ID系统自动生成，不可更改；</br>
+    （2）取样方式即数据结果；</br>
+    （3) 时间相关信息利用时间组件填写； </br>
+    （4）CT存储位置填写绝对路径；</br>
+    （5）缩略图位置固定，所以只填写文件名。
+</blockquote>
+<!--#} -->
+<script>
+layui.use(['edit'], function(){
+    var sampleinfoEdit = layui.edit
+    sampleinfoEdit.init();
+    var laydate = layui.laydate;
+
+    // 送样时间
+    laydate.render({
+        elem: '#sysj'
+        ,type: 'date'
+    });
+    // 扫描时间
+    laydate.render({
+        elem: '#smsj'
+        ,type: 'date'
+    });
+    // 取样时间
+    laydate.render({
+        elem: '#qysj'
+        ,type: 'date'
+    });
+});
+</script>

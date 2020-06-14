@@ -1,0 +1,17 @@
+<div class="layui-inline">
+    <label class="layui-form-label">${label}</label>
+    <div class="layui-input-inline">
+        <!--<div class="date-range">-->
+        <input type="text" name="${name}" autocomplete="off" class="layui-input"  id="test2">
+        <!--</div>-->
+    </div>
+</div>
+<script>
+    layui.use('laydate', function() {
+        var laydate = layui.laydate;
+        laydate.render({
+            elem: '#test2'
+            , type: 'date'
+        });
+    })
+</script>
